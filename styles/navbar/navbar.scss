@@ -16,7 +16,11 @@
       list-style: none;
       display: flex;
       gap: clamp(0.875rem, 5vw, 1.875rem);
-      align-items: center;
+      // align-items: center;
+
+      &:nth-child(2) {
+        align-self: normal;
+      }
     }
 
     .seeMycv {

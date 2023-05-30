@@ -1,6 +1,7 @@
 import Image from "next/image";
 import download from "../assets/download.svg";
 import Line from "./Line";
+import "../styles/Navbar/navbar.scss";
 
 const Navbar = () => {
   return (
@@ -11,8 +12,9 @@ const Navbar = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li>SKILLS</li>
-            <li>PROJECTS</li>
+            <li className="center-y">SKILLS</li>
+            <Line orientation="vertical" />
+            <li className="center-y">PROJECTS</li>
             <li className="seeMycv">
               <Image
                 className="download-icon"
@@ -26,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <Line />
+      <Line orientation="horizontal" />
     </>
   );
 };

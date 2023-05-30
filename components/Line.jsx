@@ -1,7 +1,13 @@
-const Line = () => {
+const Line = ({ orientation }) => {
   return (
-    <div className="full-container">
-      <div className="line"></div>
+    <div
+      className={` ${orientation === "horizontal" ? "full-container" : ""} `}
+    >
+      <div
+        className={`line | ${
+          orientation === "horizontal" ? "horizontal" : "vertical"
+        }`}
+      ></div>
     </div>
   );
 };

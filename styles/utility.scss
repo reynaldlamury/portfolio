@@ -6,3 +6,8 @@
   width: min($max-width, 100% - ($container-padding * 2));
   margin-inline: auto;
 }
+
+.center-y {
+  display: flex;
+  align-items: center;
+}
