@@ -2,11 +2,14 @@ import Image from "next/image";
 import download from "../assets/download.svg";
 import Line from "./Line";
 import "../styles/Navbar/navbar.scss";
+import localFont from "next/font/local";
+
+const billian = localFont({ src: "../assets/fonts/Billian.otf" });
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar | full-container">
+      <nav className={`navbar ${billian.className} | full-container`}>
         <div className="logo">
           REYNALD<span>R</span>LAMURY
         </div>

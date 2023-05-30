@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4.4em;
+
+  &__heading {
+    text-align: end;
+    font-size: 7.8125rem;
+    transform: translateX(60px);
+  }
+
+  &__desc {
+    margin-top: 1em;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__picture {
+    object-fit: cover;
+  }
+
+  &__bio {
+    margin-top: 1.7em;
+    padding-left: 7em;
+    font-size: 1.4375rem;
+    font-weight: 700;
+  }
+
+  &__bio-social {
+    padding-right: 5em;
+  }
+
+  &__social {
+    margin-top: 3.3em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5em;
+  }
+}
