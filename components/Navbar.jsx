@@ -15,9 +15,9 @@ const Navbar = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li className="center-y">SKILLS</li>
+            <li className="navigation__skills | center-y">SKILLS</li>
             <Line orientation="vertical" />
-            <li className="center-y">PROJECTS</li>
+            <li className="navigation__projects | center-y">PROJECTS</li>
             <li className="seeMycv">
               <Image
                 className="download-icon"

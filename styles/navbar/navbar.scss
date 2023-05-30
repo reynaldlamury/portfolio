@@ -6,6 +6,10 @@
   padding-block: 2.1875em;
   align-items: center;
 
+  .logo {
+    cursor: pointer;
+  }
+
   span {
     font-size: 0.875rem;
     color: var(--clr-accent-primary);
@@ -23,6 +27,14 @@
       }
     }
 
+    &__skills {
+      cursor: pointer;
+    }
+
+    &__projects {
+      cursor: pointer;
+    }
+
     .seeMycv {
       background-color: var(--bg-accent-primary);
       display: flex;
@@ -30,6 +42,7 @@
       padding-right: 3em;
       padding-left: 0.5em;
       border-radius: 0 6.25em 6.25em 0;
+      cursor: pointer;
 
       .download-icon {
         margin-right: 1em;
