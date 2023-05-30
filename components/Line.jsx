@@ -1,6 +1,9 @@
-
 const Line = () => {
-  return <div className="Line">Line</div>;
+  return (
+    <div className="full-container">
+      <div className="line"></div>
+    </div>
+  );
 };
 
 export default Line;
