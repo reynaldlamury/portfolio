@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  font-size: 1rem;
+  padding-block: 2.1875em;
+  align-items: center;
+
+  span {
+    font-size: 0.875rem;
+    color: var(--clr-accent-primary);
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: clamp(0.875rem, 5vw, 1.875rem);
+      align-items: center;
+    }
+
+    .seeMycv {
+      background-color: var(--bg-accent-primary);
+      display: flex;
+      align-items: center;
+      padding-right: 3em;
+      padding-left: 0.5em;
+      border-radius: 0 6.25em 6.25em 0;
+
+      .download-icon {
+        margin-right: 1em;
+      }
+    }
+  }
+}
