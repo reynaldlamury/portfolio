@@ -46,11 +46,14 @@
     }
 
     .project-desc {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+
       &__container {
         display: flex;
         justify-content: space-between;
-        background-color: black;
-        padding-block: 1em;
+        background-color: var(--bg-ternary);
+        padding-block: 2em;
       }
 
       &__tech {
