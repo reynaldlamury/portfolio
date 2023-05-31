@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  margin-right: 18.5em;
 
   &__desc-with-line {
     display: flex;
@@ -11,6 +12,7 @@
     // outline: 1px solid yellow;
     padding-block: 7.5em;
     padding-right: 4.0625em;
+    padding-left: 11em;
 
     p {
       font-size: 1.4375rem;
@@ -21,7 +23,7 @@
     font-size: 2.5rem;
     background-color: var(--bg-secondary);
     color: black;
-    padding-inline: 1.5em;
+    padding-inline: 2.5em;
 
     p {
       text-align: center;
