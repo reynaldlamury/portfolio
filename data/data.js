@@ -2,6 +2,13 @@ import linkedin from "../assets/social-icons/linkedin.svg";
 import github from "../assets/social-icons/github.svg";
 import instagram from "../assets/social-icons/instagram.svg";
 import twitter from "../assets/social-icons/twitter.svg";
+// ----------------------------------------------------------------------------- //
+import project_1 from "../assets/images/projects/bmw.jpg";
+import project_2 from "../assets/images/projects/bugatti.jpg";
+import project_3 from "../assets/images/projects/lamborghini.jpg";
+import project_4 from "../assets/images/projects/mclaren.jpg";
+import project_5 from "../assets/images/projects/ferrari.jpg";
+// ----------------------------------------------------------------------------- //
 
 const socials = [
   {
@@ -19,6 +26,49 @@ const socials = [
   },
 
   { name: "twitter", link: "https://www.twitter.com/reylamury", img: twitter },
+];
+
+export const projects = [
+  {
+    name: "project-1",
+    link: "#",
+    tech: ["html", "css", "js"],
+    img: project_1,
+    width: 528,
+    height: 352,
+  },
+  {
+    name: "project-2",
+    link: "#",
+    tech: ["next", "css", "js"],
+    img: project_2,
+    width: 494,
+    height: 333,
+  },
+  {
+    name: "project-3",
+    link: "#",
+    tech: ["react", "sass", "js"],
+    img: project_3,
+    width: 497,
+    height: 330,
+  },
+  {
+    name: "project-4",
+    link: "#",
+    tech: ["html", "css", "js"],
+    img: project_4,
+    width: 420,
+    height: 276,
+  },
+  {
+    name: "project-5",
+    link: "#",
+    tech: ["html", "css", "js"],
+    img: project_5,
+    width: 575,
+    height: 380,
+  },
 ];
 
 export default socials;
