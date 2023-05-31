@@ -1,5 +1,6 @@
 /* import Image from "next/image"; */
 import Header from "@/components/Header";
+import Main from "@/components/Main/Main";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Navbar />
       <Header />
+      <Main />
     </>
   );
 }
