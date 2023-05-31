@@ -1,7 +1,7 @@
+import "../styles/Navbar/navbar.scss";
 import Image from "next/image";
 import download from "../assets/download.svg";
 import Line from "./Line";
-import "../styles/Navbar/navbar.scss";
 import localFont from "next/font/local";
 
 const billian = localFont({ src: "../assets/fonts/Billian.otf" });
