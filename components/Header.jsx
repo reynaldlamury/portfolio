@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import reynald from "../assets/images/rey-portfolio-compressed.jpg";
 import "../styles/Header/Header.scss";
 import localFont from "next/font/local";
-import Link from "next/link";
 import socials from "@/data/data";
 
 const billian = localFont({ src: "../assets/fonts/Billian.otf" });

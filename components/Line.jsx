@@ -1,7 +1,11 @@
-const Line = ({ orientation }) => {
+import "../styles/Line/Line.scss";
+
+const Line = ({ padding, orientation }) => {
   return (
     <div
-      className={` ${orientation === "horizontal" ? "full-container" : ""} `}
+      className={`${orientation === "horizontal" ? "full-container" : ""} ${
+        padding ? "" : "no-padding"
+      } `}
     >
       <div
         className={`line | ${

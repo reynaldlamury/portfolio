@@ -16,9 +16,9 @@ const Navbar = () => {
         <div className="navigation">
           <ul>
             <li className="navigation__skills | center-y">SKILLS</li>
-            <Line orientation="vertical" />
+            <Line padding={true} orientation="vertical" />
             <li className="navigation__projects | center-y">PROJECTS</li>
-            <Line orientation="vertical" />
+            <Line padding={true} orientation="vertical" />
             <li className="navigation__about | center-y">ABOUT</li>
             <li className="seeMycv">
               <Image
@@ -33,7 +33,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <Line orientation="horizontal" />
+      <Line padding={true} orientation="horizontal" />
     </>
   );
 };

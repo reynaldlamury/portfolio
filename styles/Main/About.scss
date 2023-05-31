@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+
+  &__desc-with-line {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__desc {
+    text-align: end;
+    // outline: 1px solid yellow;
+    padding-block: 7.5em;
+    padding-right: 4.0625em;
+
+    p {
+      font-size: 1.4375rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    background-color: var(--bg-secondary);
+    color: black;
+    padding-inline: 1.5em;
+
+    p {
+      text-align: center;
+    }
+  }
+}
