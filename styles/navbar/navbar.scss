@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: var(--bg-primary);
   font-size: 1rem;
-  padding-block: 2.1875em;
+  padding-block: 1.35em;
   align-items: center;
 
   .logo {
@@ -19,7 +19,7 @@
     ul {
       list-style: none;
       display: flex;
-      gap: clamp(0.875rem, 5vw, 1.875rem);
+      gap: clamp(0.175rem, 5vw, 1.175rem);
       // align-items: center;
 
       &:nth-child(2) {
@@ -35,12 +35,17 @@
       cursor: pointer;
     }
 
+    &__about {
+      cursor: pointer;
+    }
+
     .seeMycv {
       background-color: var(--bg-accent-primary);
       display: flex;
       align-items: center;
       padding-right: 3em;
       padding-left: 0.5em;
+      margin-left: 4em;
       border-radius: 0 6.25em 6.25em 0;
       cursor: pointer;
 

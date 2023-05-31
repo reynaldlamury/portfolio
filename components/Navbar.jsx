@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${billian.className} | full-container`}>
-        <div className="logo">
+        <div className="logo | center-y">
           REYNALD<span>R</span>LAMURY
         </div>
         <div className="navigation">
@@ -18,6 +18,8 @@ const Navbar = () => {
             <li className="navigation__skills | center-y">SKILLS</li>
             <Line orientation="vertical" />
             <li className="navigation__projects | center-y">PROJECTS</li>
+            <Line orientation="vertical" />
+            <li className="navigation__about | center-y">ABOUT</li>
             <li className="seeMycv">
               <Image
                 className="download-icon"

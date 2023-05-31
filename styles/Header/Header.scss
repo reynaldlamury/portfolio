@@ -1,12 +1,18 @@
 .header {
   display: flex;
   justify-content: flex-end;
-  margin-top: 4.4em;
+  margin-top: 6em;
 
   &__heading {
     text-align: end;
-    font-size: 7.8125rem;
     transform: translateX(60px);
+    .heading-1 {
+      font-size: 7.8125rem;
+    }
+
+    .heading-2 {
+      font-size: 7.8125rem;
+    }
   }
 
   &__desc {

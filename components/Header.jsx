@@ -11,9 +11,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__desc">
-        <h1 className={`header__heading ${billian.className} | flex-end`}>
-          Hello I'm Reynald
-        </h1>
+        <div className={`header__heading ${billian.className} | flex-end`}>
+          <h2 className="heading-2">Hello,</h2>
+          <h1 className={`heading-1 ${billian.className} | flex-end`}>
+            {"I'm Reynald"}
+          </h1>
+        </div>
+
         <div className="header__bio-social">
           <p className="header__bio">
             I’m a front end web developer based in Indonesia. I am open to work
