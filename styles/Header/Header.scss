@@ -4,6 +4,12 @@
   }
 }
 
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .header {
   display: grid;
   // justify-content: flex-end;
@@ -16,12 +22,13 @@
   grid-template-rows: fit-content;
   justify-items: flex-end;
   margin-top: 6em;
+
   @include medium-max {
     grid-template-areas:
-      "heading picture"
-      "heading picture"
-      "bioSocial      bioSocial"
-      "bioSocial   bioSocial";
+      "heading   picture"
+      "heading   picture"
+      "bioSocial bioSocial"
+      "bioSocial bioSocial";
   }
 
   &__heading {
@@ -29,14 +36,29 @@
     margin-top: 1em;
     text-align: end;
     transform: translateX(60px);
+
+    @include medium-max {
+      margin-top: 4em;
+    }
+
     .heading-1 {
       // font-size: 7.8125rem;
       font-size: clamp(4rem, 9vw, 7.8125rem);
+
+      @include medium-max {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 11.5vw, 7.165rem);
+      }
     }
 
     .heading-2 {
       // font-size: 7.8125rem;
       font-size: clamp(4rem, 9vw, 7.8125rem);
+
+      @include medium-max {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 11.5vw, 7.165rem);
+      }
     }
   }
 
@@ -69,7 +91,8 @@
     font-weight: 700;
 
     @include medium-max {
-      color: slateblue;
+      font-size: 1.4375rem;
+      margin-top: 1em;
     }
   }
 
