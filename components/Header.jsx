@@ -1,7 +1,7 @@
+import "../styles/Header/Header.scss";
 import Image from "next/image";
 import Link from "next/link";
 import reynald from "../assets/images/rey-portfolio-compressed.jpg";
-import "../styles/Header/Header.scss";
 import localFont from "next/font/local";
 import socials from "@/data/data";
 
@@ -40,8 +40,8 @@ const Header = () => {
         src={reynald}
         alt="Reynald Lamury main picture"
         priority={true}
-        width={650}
-        height={530}
+        /* width={650} */
+        /* height={530} */
       />
     </header>
   );

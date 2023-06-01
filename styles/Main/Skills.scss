@@ -1,0 +1,31 @@
+.skills {
+  .title-container {
+    height: 126px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    // padding-block: 1.5em;
+    outline: 1px solid red;
+    z-index: -1;
+  }
+
+  .box-big {
+    width: 164px;
+    height: calc(126px * 2);
+    position: absolute;
+    left: 100px;
+    background: slateblue;
+    color: white;
+    z-index: 1;
+  }
+
+  .box-small {
+    width: 87px;
+    height: 126px;
+    position: absolute;
+    left: 100px;
+    background: slateblue;
+    color: white;
+    z-index: 1;
+  }
+}

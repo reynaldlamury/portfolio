@@ -1,3 +1,5 @@
+"use client";
+
 import "../styles/Line/Line.scss";
 
 const Line = ({ padding, orientation }) => {
