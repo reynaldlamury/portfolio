@@ -1,9 +1,32 @@
+@mixin medium-max {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 .header {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  // justify-content: flex-end;
+  grid-template-areas:
+    "heading   picture"
+    "bioSocial picture"
+    "bioSocial  picture"
+    "none      none";
+  grid-template-columns: 1fr 0.8fr;
+  grid-template-rows: fit-content;
+  justify-items: flex-end;
   margin-top: 6em;
+  @include medium-max {
+    grid-template-areas:
+      "heading picture"
+      "heading picture"
+      "bioSocial      bioSocial"
+      "bioSocial   bioSocial";
+  }
 
   &__heading {
+    grid-area: heading;
+    margin-top: 1em;
     text-align: end;
     transform: translateX(60px);
     .heading-1 {
@@ -27,26 +50,36 @@
   /* width={650} */
   /* height={530} */
   &__picture {
+    grid-area: picture;
     object-fit: cover;
-    // width: 50%;
-    width: clamp(300px, 52%, 40.625rem);
-    height: 50%;
+    width: 100%;
+    // width: clamp(300px, 52%, 40.625rem);
+    height: 100%;
   }
 
   &__bio {
+    // grid-area: bio;
+    display: flex;
     margin-top: 1.7em;
+    text-align: end;
     // padding-left: 7em;
     padding-left: clamp(1.5em, 10vw, 7em);
     // font-size: 1.4375rem;
     font-size: clamp(0.5rem, 1.8vw, 1.4375rem);
     font-weight: 700;
+
+    @include medium-max {
+      color: slateblue;
+    }
   }
 
   &__bio-social {
+    grid-area: bioSocial;
     padding-right: 5em;
   }
 
   &__social {
+    // grid-area: social;
     // margin-top: 3.3em;
     margin-top: clamp(1em, 5vw, 3.3em);
     list-style: none;

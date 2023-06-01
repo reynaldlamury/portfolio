@@ -10,31 +10,31 @@ const billian = localFont({ src: "../assets/fonts/Billian.otf" });
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__desc">
-        <div className={`header__heading ${billian.className} | flex-end`}>
-          <h2 className="heading-2">Hello,</h2>
-          <h1 className={`heading-1 ${billian.className} | flex-end`}>
-            {"I'm Reynald"}
-          </h1>
-        </div>
-
-        <div className="header__bio-social">
-          <p className="header__bio">
-            I’m a front end web developer based in Indonesia. I am open to work
-            on any cool projects. And eager to try new challenges.
-          </p>
-
-          <ul className="header__social">
-            {socials.map(({ name, link, img }, idx) => (
-              <li key={idx}>
-                <Link href={link} aria-label={name}>
-                  <Image src={img} alt={name} width={22} height={22} />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+      {/* <div className="header__desc"> */}
+      <div className={`header__heading ${billian.className} | flex-end`}>
+        <h2 className="heading-2">Hello,</h2>
+        <h1 className={`heading-1 ${billian.className} | flex-end`}>
+          {"I'm Reynald"}
+        </h1>
       </div>
+
+      <div className="header__bio-social">
+        <p className="header__bio">
+          I’m a front end web developer based in Indonesia. I am open to work on
+          any cool projects. And eager to try new challenges.
+        </p>
+
+        <ul className="header__social">
+          {socials.map(({ name, link, img }, idx) => (
+            <li key={idx}>
+              <Link href={link} aria-label={name}>
+                <Image src={img} alt={name} width={22} height={22} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* </div> */}
       <Image
         className="header__picture"
         src={reynald}
