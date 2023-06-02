@@ -64,10 +64,12 @@
     @include mobile {
       margin-top: 0;
       transform: translateY(-50px);
-      margin-right: 1.3em;
+      // margin-right: 1.3em;
+      margin-right: clamp(1.3em, 15vw, 3.7em);
     }
 
     @include mobile-small {
+      margin-right: 1.3em;
       transform: translateY(-40px);
     }
 
@@ -147,6 +149,10 @@
       padding-left: clamp(1.5em, 15vw, 7em);
     }
 
+    @include mobile {
+      font-size: 1.18rem;
+    }
+
     @include mobile-small {
       font-size: 1.18rem;
       padding-left: clamp(0.5em, 20vw, 1.2em);
@@ -163,6 +169,11 @@
 
     @include mobile {
       transform: translateY(-40px);
+      // margin-right: 1.3em;
+      margin-right: clamp(1.3em, 10vw, 3.7em);
+    }
+
+    @include mobile-small {
       margin-right: 1.3em;
     }
   }
@@ -180,11 +191,15 @@
     @include mobile {
       gap: 4.2em;
       margin-top: clamp(1em, 20vw, 2.3em);
-      justify-content: space-between;
+      // justify-content: space-between;
       margin-left: 1.3em;
       padding-right: 1.3em;
       width: 100%;
       height: 100%;
+    }
+
+    @include mobile-small {
+      justify-content: space-between;
     }
   }
 }
