@@ -157,6 +157,10 @@
     grid-area: bioSocial;
     margin-right: 5em;
 
+    @include medium-max {
+      margin-right: 3.7em;
+    }
+
     @include mobile {
       transform: translateY(-40px);
       margin-right: 1.3em;

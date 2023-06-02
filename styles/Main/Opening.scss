@@ -17,6 +17,8 @@
 }
 
 .opening {
+  margin-bottom: 5em;
+
   &__text {
     font-size: 5rem;
     text-align: end;
@@ -25,5 +27,11 @@
     margin-left: clamp(1em, 24vw, 15.5em);
     margin-right: clamp(0.5em, 12.7vw, 2.5em);
     line-height: 5.3rem;
+
+    @include medium-max {
+      // width: 100%;
+      max-width: 1024px;
+      margin-inline: 0.85em;
+    }
   }
 }
