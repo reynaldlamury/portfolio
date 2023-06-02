@@ -1,6 +1,8 @@
 .about {
   display: flex;
   margin-right: 18.5em;
+  width: clamp(2em, 80vw, 60em);
+  height: clamp(2em, 50vw, 60em);
 
   &__desc-with-line {
     display: flex;
@@ -15,12 +17,14 @@
     padding-left: 9em;
 
     p {
-      font-size: 1.6375rem;
+      // font-size: 1.6375rem;
+      font-size: clamp(0.5rem, 2vw, 1.6375rem);
     }
   }
 
   &__title {
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
+    font-size: clamp(0.5rem, 3vw, 2.5rem);
     background-color: var(--bg-white-ternary);
     color: black;
     padding-inline: 2.5em;

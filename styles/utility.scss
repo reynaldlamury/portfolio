@@ -1,6 +1,6 @@
 .full-container {
   $max-width: 2500px; /* 4k resolution */
-  $container-padding: 1em;
+  $container-padding: 1.8em;
   // outline: 1px solid red;
 
   width: min($max-width, 100% - ($container-padding * 2));
