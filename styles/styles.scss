@@ -2,6 +2,24 @@
 @import "./variables.scss";
 @import "./utility.scss";
 
+html {
+  &::-webkit-scrollbar {
+    width: 1.3vw;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: yellowgreen;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1c1c1c;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #777;
+  }
+}
+
 body {
   font-family: "Poppins";
   // color: var(--clr-primary);

@@ -10,6 +10,12 @@
   }
 }
 
+@mixin mobile-small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .header {
   display: grid;
   // justify-content: flex-end;
@@ -31,6 +37,17 @@
       "bioSocial bioSocial";
   }
 
+  @include mobile {
+    background-color: #1c1c1c;
+    color: #fff;
+    grid-template-areas:
+      "picture   picture"
+      "picture   picture"
+      "heading   heading"
+      "bioSocial bioSocial";
+    margin-top: 0;
+  }
+
   &__heading {
     grid-area: heading;
     margin-top: 1em;
@@ -39,6 +56,18 @@
 
     @include medium-max {
       margin-top: 4em;
+      transform: none;
+      margin-right: 5em;
+    }
+
+    @include mobile {
+      margin-top: 0;
+      transform: translateY(-50px);
+      margin-right: 1.3em;
+    }
+
+    @include mobile-small {
+      transform: translateY(-40px);
     }
 
     .heading-1 {
@@ -49,6 +78,16 @@
         // font-size: 7.165rem;
         font-size: clamp(4rem, 11.5vw, 7.165rem);
       }
+
+      @include mobile {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 16vw, 7.45rem);
+      }
+
+      @include mobile-small {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 20vw, 7.45rem);
+      }
     }
 
     .heading-2 {
@@ -58,6 +97,16 @@
       @include medium-max {
         // font-size: 7.165rem;
         font-size: clamp(4rem, 11.5vw, 7.165rem);
+      }
+
+      @include mobile {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 16vw, 7.45rem);
+      }
+
+      @include mobile-small {
+        // font-size: 7.165rem;
+        font-size: clamp(4rem, 20vw, 7.45rem);
       }
     }
   }
@@ -93,12 +142,23 @@
     @include medium-max {
       font-size: 1.4375rem;
       margin-top: 1em;
+      padding-left: clamp(1.5em, 15vw, 7em);
+    }
+
+    @include mobile-small {
+      font-size: 1.18rem;
+      padding-left: clamp(0.5em, 20vw, 1.2em);
     }
   }
 
   &__bio-social {
     grid-area: bioSocial;
-    padding-right: 5em;
+    margin-right: 5em;
+
+    @include mobile {
+      transform: translateY(-40px);
+      margin-right: 1.3em;
+    }
   }
 
   &__social {
@@ -109,5 +169,16 @@
     display: flex;
     justify-content: flex-end;
     gap: 5em;
+    line-height: 1.8rem;
+
+    @include mobile {
+      gap: 4.2em;
+      margin-top: clamp(1em, 20vw, 2.3em);
+      justify-content: space-between;
+      margin-left: 1.3em;
+      padding-right: 1.3em;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
