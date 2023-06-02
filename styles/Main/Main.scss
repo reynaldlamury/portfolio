@@ -1,3 +1,13 @@
+@mixin medium-max {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 .main {
   margin-top: 10em;
+
+  @include medium-max {
+    margin-top: clamp(1em, 16vw, 10em);
+  }
 }
