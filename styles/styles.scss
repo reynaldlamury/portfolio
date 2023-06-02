@@ -19,9 +19,9 @@ html {
 body {
   font-family: "Poppins";
   // color: var(--clr-primary);
-  color: #ebeded;
+  color: var(--clr-primary);
   // background-color: #00a19a;
-  background-color: #1e827d;
+  background-color: var(--bg-primary);
 
   h1::selection {
     color: #1c1c1c;

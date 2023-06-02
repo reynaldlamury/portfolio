@@ -12,7 +12,7 @@ const Header = () => {
     <header className="header">
       {/* <div className="header__desc"> */}
       <div className={`header__heading ${billian.className} | flex-end`}>
-        <h2 className="heading-2">Bello,</h2>
+        <h2 className="heading-2">Hello,</h2>
         <h1 className={`heading-1 ${billian.className} | flex-end`}>
           {"I'm Reynald"}
         </h1>
