@@ -8,7 +8,7 @@ const Opening = () => {
     <section className="opening">
       <h3 className={`opening__text ${billian.className}`}>
         I develop web pages and interfaces, taking visual design to fully
-        functional website.
+        functional website across any devices.
       </h3>
     </section>
   );

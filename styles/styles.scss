@@ -4,19 +4,15 @@
 
 html {
   &::-webkit-scrollbar {
-    width: 1.3vw;
-  }
-
-  &:hover::-webkit-scrollbar-thumb {
-    background: yellowgreen;
+    width: 1vw;
   }
 
   &::-webkit-scrollbar-track {
-    background: #1c1c1c;
+    background: grey;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #777;
+    background-color: white;
   }
 }
 
