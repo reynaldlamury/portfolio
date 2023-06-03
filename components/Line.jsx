@@ -7,12 +7,14 @@ const Line = ({ padding, orientation, mobile }) => {
   return (
     <Media
       queries={{
-        small: "(max-width: 768px)",
+        large: "(min-width: 1024px)",
       }}
     >
       {(matches) => (
         <div
-          style={{ display: `${matches.small && mobile ? "none" : ""}` }}
+          style={{
+            display: `${!matches.large && mobile ? "none" : ""}`,
+          }}
           className={`${orientation === "horizontal" ? "full-container" : ""} ${
             padding ? "" : "no-padding"
           } `}
