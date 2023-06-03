@@ -24,8 +24,8 @@ const Projects = () => {
                   className={`project-picture`}
                   alt={name}
                   src={img}
-                  width={width}
-                  height={height}
+                  /* width={width} */
+                  /* height={height} */
                 />
               </Link>
               <div className="project-desc">
