@@ -1,5 +1,5 @@
-@mixin medium-max {
-  @media (max-width: 1024px) {
+@mixin medium-min {
+  @media (max-width: 1000px) {
     @content;
   }
 }
@@ -10,21 +10,13 @@
   }
 }
 
-@mixin mobile-small {
-  @media (max-width: 575px) {
-    @content;
-  }
-}
-
-@mixin medium-min {
-  @media (max-width: 1000px) {
-    @content;
-  }
-}
-
 .projects {
   margin-top: 13.5em;
   outline: 1px solid red;
+
+  @include medium-min {
+    margin-top: 5em;
+  }
 
   &__container {
     outline: 1px solid crimson;
@@ -32,12 +24,28 @@
     // margin-inline: 18em;
     margin-inline: clamp(0.5rem, 10vw, 18em);
 
+    @include medium-min {
+      margin-bottom: 4em;
+    }
+
+    @include mobile {
+      margin-inline: 1em;
+    }
+
     .title {
       text-align: center;
       // font-size: 4.8125rem;
       font-size: clamp(0.5rem, 6vw, 4.8125rem);
       line-height: 1em;
       letter-spacing: 0.2rem;
+
+      @include medium-min {
+        line-height: 1.1em;
+      }
+
+      @include mobile {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -47,6 +55,14 @@
       grid-template-columns: 1fr 1fr;
       justify-items: flex-end;
       margin-bottom: 20em;
+
+      @include medium-min {
+        justify-items: stretch;
+      }
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
 
       & > .project_container:nth-child(1) {
         transform: translateX(-60px);
@@ -60,6 +76,15 @@
           // height: 352px;
           width: clamp(100px, 39vw, 528px);
           height: clamp(100px, 25vw, 352px);
+
+          @include medium-min {
+            width: clamp(100px, 47vw, 628px);
+          }
+
+          @include mobile {
+            width: clamp(100px, 120vw, 720px);
+            height: clamp(100px, 55vw, 409px);
+          }
         }
       }
 
@@ -76,8 +101,13 @@
           width: clamp(100px, 39vw, 494px);
           height: clamp(100px, 25vw, 333px);
           @include medium-min {
-            width: clamp(100px, 39vw, 528px);
+            width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
+          }
+
+          @include mobile {
+            width: clamp(100px, 120vw, 720px);
+            height: clamp(100px, 55vw, 409px);
           }
         }
       }
@@ -95,8 +125,13 @@
           width: clamp(100px, 39vw, 497px);
           height: clamp(100px, 25vw, 330px);
           @include medium-min {
-            width: clamp(100px, 39vw, 528px);
+            width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
+          }
+
+          @include mobile {
+            width: clamp(100px, 120vw, 720px);
+            height: clamp(100px, 55vw, 409px);
           }
         }
       }
@@ -114,8 +149,13 @@
           width: clamp(100px, 33vw, 420px);
           height: clamp(100px, 20vw, 276px);
           @include medium-min {
-            width: clamp(100px, 39vw, 528px);
+            width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
+          }
+
+          @include mobile {
+            width: clamp(100px, 120vw, 720px);
+            height: clamp(100px, 55vw, 409px);
           }
         }
       }
@@ -133,8 +173,13 @@
           width: clamp(300px, 39vw, 575px);
           height: clamp(200px, 25vw, 280px);
           @include medium-min {
-            width: clamp(100px, 39vw, 528px);
+            width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
+          }
+
+          @include mobile {
+            width: clamp(100px, 120vw, 720px);
+            height: clamp(100px, 55vw, 409px);
           }
         }
       }
