@@ -1,3 +1,27 @@
+@mixin medium-max {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin medium-min {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
 .projects {
   margin-top: 13.5em;
   outline: 1px solid red;
@@ -25,8 +49,11 @@
       margin-bottom: 20em;
 
       & > .project_container:nth-child(1) {
-        transform: translateX(-50px);
-        padding-right: 2em;
+        transform: translateX(-60px);
+
+        @include medium-min {
+          transform: none;
+        }
 
         .project-picture {
           // width: 528px;
@@ -39,44 +66,76 @@
       & > .project_container:nth-child(2) {
         transform: translateY(150px);
 
+        @include medium-min {
+          transform: none;
+        }
+
         .project-picture {
           // width: 494px;
           // height: 333px;
           width: clamp(100px, 39vw, 494px);
           height: clamp(100px, 25vw, 333px);
+          @include medium-min {
+            width: clamp(100px, 39vw, 528px);
+            height: clamp(100px, 25vw, 352px);
+          }
         }
       }
 
       & > .project_container:nth-child(3) {
         transform: translate(8px, 170px);
 
+        @include medium-min {
+          transform: none;
+        }
+
         .project-picture {
           // width: 497px;
           // height: 330px;
           width: clamp(100px, 39vw, 497px);
           height: clamp(100px, 25vw, 330px);
+          @include medium-min {
+            width: clamp(100px, 39vw, 528px);
+            height: clamp(100px, 25vw, 352px);
+          }
         }
       }
 
       & > .project_container:nth-child(4) {
-        transform: translate(-153px, 180px);
+        transform: translate(-123px, 180px);
+
+        @include medium-min {
+          transform: none;
+        }
 
         .project-picture {
           // width: 420;
           // height: 276;
           width: clamp(100px, 33vw, 420px);
           height: clamp(100px, 20vw, 276px);
+          @include medium-min {
+            width: clamp(100px, 39vw, 528px);
+            height: clamp(100px, 25vw, 352px);
+          }
         }
       }
 
       & > .project_container:nth-child(5) {
         transform: translate(242px, 300px);
 
+        @include medium-min {
+          transform: none;
+        }
+
         .project-picture {
           // width: 575;
           // height: 380;
-          width: clamp(100px, 39vw, 575px);
-          height: clamp(100px, 25vw, 280px);
+          width: clamp(300px, 39vw, 575px);
+          height: clamp(200px, 25vw, 280px);
+          @include medium-min {
+            width: clamp(100px, 39vw, 528px);
+            height: clamp(100px, 25vw, 352px);
+          }
         }
       }
     }
