@@ -10,6 +10,12 @@
   }
 }
 
+@mixin mobile-small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .projects {
   margin-top: 13.5em;
   outline: 1px solid red;
@@ -28,7 +34,7 @@
       margin-bottom: 4em;
     }
 
-    @include mobile {
+    @include mobile-small {
       margin-inline: 1em;
     }
 
@@ -43,7 +49,7 @@
         line-height: 1.1em;
       }
 
-      @include mobile {
+      @include mobile-small {
         font-size: 2rem;
       }
     }
