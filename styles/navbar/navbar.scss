@@ -45,6 +45,12 @@
     }
   }
 
+  &__line {
+    @include mobile {
+      display: none;
+    }
+  }
+
   .logo {
     cursor: pointer;
 

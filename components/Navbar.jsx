@@ -36,7 +36,7 @@ const Navbar = () => {
           <p>MENU</p>
         </div>
       </nav>
-      <Line padding={true} orientation="horizontal" />
+      <Line mobile={true} padding={true} orientation="horizontal" />
     </>
   );
 };

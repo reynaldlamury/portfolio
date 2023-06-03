@@ -28,6 +28,10 @@
     margin-right: 2em;
   }
 
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
   &__desc-with-line {
     display: flex;
     flex-direction: column;
@@ -52,8 +56,13 @@
       font-size: clamp(0.5rem, 2vw, 1.6375rem);
 
       @include medium-max {
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
+        font-size: clamp(1rem, 2.5vw, 1.6rem);
       }
+
+      // @include mobile {
+      //   font-size: clamp(0.5rem, 2vw, 1.6rem);
+      // }
     }
   }
 
