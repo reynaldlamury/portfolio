@@ -32,6 +32,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <div className="navbar__menu | center-xy">
+          <p>MENU</p>
+        </div>
       </nav>
       <Line padding={true} orientation="horizontal" />
     </>

@@ -1,13 +1,56 @@
+@mixin medium-max {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-ternary);
+  background-color: var(--bg-primary);
   font-size: 1rem;
   padding-block: 1.35em;
   align-items: center;
 
+  @include mobile {
+    padding-top: 0.4em;
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    font-family: "Poppins";
+    display: none;
+
+    @include mobile {
+      font-size: 0.9em;
+      font-weight: 700;
+      display: block;
+      background-color: var(--bg-accent-primary);
+      border-radius: 6.25em 6.25em;
+      padding-block: 0.5em;
+      padding-inline: 2em;
+      cursor: pointer;
+    }
+  }
+
   .logo {
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   span {
@@ -16,6 +59,10 @@
   }
 
   .navigation {
+    @include mobile {
+      display: none;
+    }
+
     ul {
       list-style: none;
       display: flex;
