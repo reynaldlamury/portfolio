@@ -2,8 +2,8 @@ import "../../styles/Main/Projects.scss";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/data/data";
 import Line from "../Line";
+import { projects } from "@/data/data";
 
 const billian = localFont({ src: "../../assets/fonts/Billian.otf" });
 
@@ -21,7 +21,7 @@ const Projects = () => {
             <div key={idx} className="project_container">
               <Link key={idx} href={link}>
                 <Image
-                  className="project-picture"
+                  className={`project-picture`}
                   alt={name}
                   src={img}
                   width={width}

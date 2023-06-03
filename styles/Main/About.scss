@@ -33,7 +33,7 @@
   }
 
   @include mobile-small {
-    margin-top: 22em;
+    margin-top: 24em;
   }
 
   &__desc-with-line {
@@ -68,7 +68,7 @@
       // font-size: 1.6375rem;
       font-size: clamp(0.5rem, 2vw, 1.6375rem);
       font-weight: 700;
-      line-height: 1.5em;
+      line-height: 1.7em;
 
       @include medium-max {
         // font-size: 1.6rem;
