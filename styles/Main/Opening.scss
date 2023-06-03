@@ -19,6 +19,10 @@
 .opening {
   margin-bottom: 5em;
 
+  @include mobile-small {
+    margin-bottom: 1em;
+  }
+
   &__text {
     font-size: 5rem;
     text-align: end;

@@ -32,6 +32,10 @@
     flex-direction: column-reverse;
   }
 
+  @include mobile-small {
+    margin-top: 22em;
+  }
+
   &__desc-with-line {
     display: flex;
     flex-direction: column;
@@ -51,9 +55,20 @@
       // font-size: clamp(0.5rem, 5vw, 1.775rem);
     }
 
+    @include mobile {
+      padding-top: em;
+      padding-right: 2.5em;
+    }
+
+    @include mobile-small {
+      padding-right: 0;
+    }
+
     p {
       // font-size: 1.6375rem;
       font-size: clamp(0.5rem, 2vw, 1.6375rem);
+      font-weight: 700;
+      line-height: 1.5em;
 
       @include medium-max {
         // font-size: 1.6rem;
@@ -73,8 +88,16 @@
     color: black;
     padding-inline: 2.5em;
 
+    @include mobile {
+      padding-block: 0.5em;
+    }
+
     p {
       text-align: center;
+
+      @include mobile {
+        font-size: 1.18rem;
+      }
     }
   }
 }
