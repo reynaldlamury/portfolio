@@ -17,7 +17,7 @@ const Projects = () => {
       </div>
       <div className="projects__lists">
         <ul>
-          {projects.map(({ name, link, img, width, height, tech }, idx) => (
+          {projects.map(({ name, link, img, tech }, idx) => (
             <div key={idx} className="project_container">
               <Link key={idx} href={link}>
                 <Image

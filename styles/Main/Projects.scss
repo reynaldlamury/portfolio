@@ -18,14 +18,14 @@
 
 .projects {
   margin-top: 13.5em;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @include medium-min {
     margin-top: 5em;
   }
 
   &__container {
-    outline: 1px solid crimson;
+    // outline: 1px solid crimson;
     margin-bottom: 13.5em;
     // margin-inline: 18em;
     margin-inline: clamp(0.5rem, 10vw, 18em);
@@ -202,8 +202,8 @@
       &__container {
         display: flex;
         justify-content: space-between;
-        // background-color: var(--bg-ternary);
-        background-color: red;
+        background-color: var(--bg-primary);
+        // background-color: red;
         padding-block: 2em;
       }
 

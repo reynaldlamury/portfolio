@@ -1,4 +1,5 @@
 import "../../styles/Main/Main.scss";
+import Footer from "../Footer";
 import About from "./About";
 import Opening from "./Opening";
 import Projects from "./Projects";
@@ -11,6 +12,7 @@ const Main = () => {
       <About />
       <Projects />
       <Skills />
+      <Footer />
     </main>
   );
 };
