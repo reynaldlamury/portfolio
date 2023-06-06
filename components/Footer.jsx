@@ -1,40 +1,52 @@
-import socials from "@/data/data";
+import "../styles/Footer/Footer.scss";
+import { socials_black } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import download_black from "../assets/download_black.svg";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__title">
-        <p>
-          FEEL FREE TO CONTACT ME ANYTIME. I’LL BE VERY HAPPY IF YOU JUST WANT
-          TO SAY HELLO
-        </p>
-      </div>
-      <button className="footer__email-button">
-        <p>reynaldlamury@gmail.com</p>
-      </button>
-      <div className="footer__content-bottom">
-        <div className="footer__bigtext-bottom">
-          <p>REYNALDRLAMURY</p>
+      <div className="footer-container">
+        <div className="footer__title">
+          <p>
+            FEEL FREE TO CONTACT ME ANYTIME. I’LL BE VERY HAPPY IF YOU JUST WANT
+            TO SAY HELLO
+          </p>
         </div>
-        <p className="text1">Code by Reynald Lamury</p>
-        <ul className="social">
-          {socials.map(({ name, link, img }, idx) => (
-            <li key={idx}>
-              <Link href={link} aria-label={name}>
-                <Image src={img} alt={name} width={22} height={22} />
-              </Link>
+        <button className="footer__email-button">
+          <p>reynaldlamury@gmail.com</p>
+        </button>
+        <div className="footer__content-bottom">
+          <div className="footer__bigtext-bottom | center-xy">
+            <p>REYNALDRLAMURY</p>
+          </div>
+          <div className="text1 | center-xy">
+            <p>Code by Reynald Lamury</p>
+          </div>
+          <ul className="social">
+            {socials_black.map(({ name, link, img }, idx) => (
+              <li key={idx}>
+                <Link href={link} aria-label={name}>
+                  <Image src={img} alt={name} width={22} height={22} />
+                </Link>
+              </li>
+            ))}
+            <li className="cv-button">
+              <Image
+                className="download-icon"
+                src={download_black}
+                alt="download-icon"
+                width={40}
+                height={40}
+              />
+              <p>See my cv</p>
             </li>
-          ))}
-          <li>
-            <div className="icon"></div>
-            <p>See my cv</p>
-          </li>
-        </ul>
-        <div className="text2">
-          <p>@Indonesia</p>
+          </ul>
+          <div className="text2 | center-xy">
+            <p>@Indonesia</p>
+          </div>
         </div>
       </div>
     </footer>

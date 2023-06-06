@@ -1,0 +1,51 @@
+.footer {
+  background-color: #fff;
+  color: black;
+
+  .footer-container {
+    outline: 1px solid red;
+
+    .footer__content-bottom {
+      display: grid;
+      grid-template-areas:
+        "bigText bigText bigText"
+        "text1 social text2";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: fit-content;
+      margin-top: 3em;
+
+      .footer__bigtext-bottom {
+        grid-area: bigText;
+        background-color: slateblue;
+        font-size: 8.75rem;
+        line-height: 7.75rem;
+      }
+
+      .social {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+        grid-area: social;
+        list-style: none;
+      }
+
+      .cv-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 1em;
+      }
+
+      .text1 {
+        grid-area: text1;
+        background-color: firebrick;
+      }
+
+      .text2 {
+        grid-area: text2;
+        background-color: turquoise;
+      }
+    }
+  }
+}

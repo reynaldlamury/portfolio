@@ -3,6 +3,11 @@ import github from "../assets/social-icons/github.svg";
 import instagram from "../assets/social-icons/instagram.svg";
 import twitter from "../assets/social-icons/twitter.svg";
 // ----------------------------------------------------------------------------- //
+import linkedin_black from "../assets/social-icons/linkedin_black.svg";
+import github_black from "../assets/social-icons/github_black.svg";
+import instagram_black from "../assets/social-icons/instagram_black.svg";
+import twitter_black from "../assets/social-icons/twitter_black.svg";
+// ----------------------------------------------------------------------------- //
 import project_1 from "../assets/images/projects/bmw.jpg";
 import project_2 from "../assets/images/projects/bugatti.jpg";
 import project_3 from "../assets/images/projects/lamborghini.jpg";
@@ -26,6 +31,32 @@ const socials = [
   },
 
   { name: "twitter", link: "https://www.twitter.com/reylamury", img: twitter },
+];
+
+export const socials_black = [
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/reynald-lamury-339620140/",
+    img: linkedin_black,
+  },
+
+  {
+    name: "github",
+    link: "https://github.com/reynaldlamury/",
+    img: github_black,
+  },
+
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/reynaldlamury",
+    img: instagram_black,
+  },
+
+  {
+    name: "twitter",
+    link: "https://www.twitter.com/reylamury",
+    img: twitter_black,
+  },
 ];
 
 export const projects = [
