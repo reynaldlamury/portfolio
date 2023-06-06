@@ -10,9 +10,9 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${billian.className} | full-container`}>
-        <div className="logo | center-y">
-          REYNALD<span>R</span>LAMURY
-        </div>
+        {/* <div className="logo | center-y"> */}
+        {/*   REYNALD<span>R</span>LAMURY */}
+        {/* </div> */}
         <div className="navigation">
           <ul>
             <li className="navigation__skills | center-y">SKILLS</li>

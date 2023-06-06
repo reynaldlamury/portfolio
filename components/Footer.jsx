@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="footer__bigtext-bottom | center-xy">
             <p>REYNALDRLAMURY</p>
           </div>
-          <div className="text1 | center-xy">
+          <div className="text1 | center-y">
             <p>Code by Reynald Lamury</p>
           </div>
           <ul className="social">
@@ -44,7 +44,7 @@ const Footer = () => {
               <p>See my cv</p>
             </li>
           </ul>
-          <div className="text2 | center-xy">
+          <div className="text2 | center-y">
             <p>@Indonesia</p>
           </div>
         </div>

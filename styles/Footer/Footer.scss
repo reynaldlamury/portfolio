@@ -16,7 +16,7 @@
 
       .footer__bigtext-bottom {
         grid-area: bigText;
-        background-color: slateblue;
+        // background-color: slateblue;
         font-size: 8.75rem;
         line-height: 7.75rem;
       }
@@ -28,6 +28,7 @@
         justify-content: center;
         grid-area: social;
         list-style: none;
+        margin-block: 2em;
       }
 
       .cv-button {
@@ -39,12 +40,14 @@
 
       .text1 {
         grid-area: text1;
-        background-color: firebrick;
+        // background-color: firebrick;
       }
 
       .text2 {
+        display: flex;
+        justify-content: flex-end;
         grid-area: text2;
-        background-color: turquoise;
+        // background-color: turquoise;
       }
     }
   }
