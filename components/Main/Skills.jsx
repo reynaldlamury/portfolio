@@ -11,42 +11,43 @@ import "../../styles/Main/Skills.scss";
 /* import react from "../../assets/skill-icons/react.svg"; */
 /* import js from "../../assets/skill-icons/javascript.svg"; */
 import Line from "../Line";
+import Box from "./Box";
 
 /* const randomNumber = Math.floor(Math.random() * 10) + 1; */
 
 const Skills = () => {
   const box1ref = useRef();
-  /* const box2ref = useRef(); */
+  const box2ref = useRef();
   /* const box3ref = useRef(); */
 
   useEffect(() => {
-    console.log(box1ref.current);
-    console.log("rendering ...");
+    console.log(box2ref.current);
   }, []);
 
   return (
     <section className="skills">
       <Line padding={false} orientation="horizontal" />
       <SkillText />
-      <div ref={box1ref}>box1</div>
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="github" */}
-      {/*   left={100} */}
-      {/*   size="small" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="git" */}
-      {/*   left={410} */}
-      {/*   size="small" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="html" */}
-      {/*   left={700} */}
-      {/*   size="big" */}
-      {/* /> */}
+      <Box
+        ref={box1ref}
+        random={Math.floor(Math.random() * 2) + 1}
+        text="github"
+        left={100}
+        size="small"
+      />
+      <Box
+        ref={box2ref}
+        random={Math.floor(Math.random() * 2) + 1}
+        text="git"
+        left={410}
+        size="small"
+      />
+      <Box
+        random={Math.floor(Math.random() * 2) + 1}
+        text="html"
+        left={700}
+        size="big"
+      />
       {/* <Box */}
       {/*   random={Math.floor(Math.random() * 2) + 1} */}
       {/*   text="css" */}
@@ -101,19 +102,6 @@ const SkillText = () => {
           </p>
         ))}
     </div>
-  );
-};
-
-const Box = ({ left, text, random }) => {
-  return (
-    <>
-      <div
-        style={{ left: `${left}px` }}
-        className={`${random === 2 ? "box-small" : "box-big"} | center-xy`}
-      >
-        {text}-{random}
-      </div>
-    </>
   );
 };
 

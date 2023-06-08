@@ -11,12 +11,12 @@
 
   .footer-container {
     .footer__content-upper {
-      outline: 1px solid red;
+      // outline: 1px solid red;
       flex-direction: column;
       gap: 2.2em;
 
       .upper_title {
-        outline: 1px solid slateblue;
+        // outline: 1px solid slateblue;
         font-size: 4.25rem;
         line-height: 4.25rem;
         text-align: center;
@@ -43,11 +43,11 @@
     }
 
     .footer__bottom-wrapper {
-      outline: 1px solid blue;
+      // outline: 1px solid blue;
       margin-top: 12em;
 
       .footer__content-bottom {
-        outline: 1px solid green;
+        // outline: 1px solid green;
         display: grid;
         grid-template-areas:
           "bigText bigText bigText"
