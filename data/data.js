@@ -102,4 +102,16 @@ export const projects = [
   },
 ];
 
+export const skills = [
+  "html",
+  "css",
+  "js",
+  "react",
+  "r3f",
+  "git",
+  "github",
+  "linux",
+  "vim",
+];
+
 export default socials;

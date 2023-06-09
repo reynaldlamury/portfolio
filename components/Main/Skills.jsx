@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 /* import { useEffect } from "react"; */
 import "../../styles/Main/Skills.scss";
 /* import Image from "next/image"; */
@@ -12,71 +12,39 @@ import "../../styles/Main/Skills.scss";
 /* import js from "../../assets/skill-icons/javascript.svg"; */
 import Line from "../Line";
 import Box from "./Box";
+import { skills } from "@/data/data";
 
 /* const randomNumber = Math.floor(Math.random() * 10) + 1; */
 
 const Skills = () => {
   const box1ref = useRef();
-  const box2ref = useRef();
   /* const box3ref = useRef(); */
 
-  useEffect(() => {
-    console.log(box2ref.current);
-  }, []);
+  const calcSize = () => {
+    return Math.floor(Math.random() * 2) + 1;
+  };
 
   return (
     <section className="skills">
       <Line padding={false} orientation="horizontal" />
       <SkillText />
-      <Box
-        ref={box1ref}
-        random={Math.floor(Math.random() * 2) + 1}
-        text="github"
-        left={100}
-        size="small"
-      />
-      <Box
-        ref={box2ref}
-        random={Math.floor(Math.random() * 2) + 1}
-        text="git"
-        left={410}
-        size="small"
-      />
-      <Box
-        random={Math.floor(Math.random() * 2) + 1}
-        text="html"
-        left={700}
-        size="big"
-      />
+
+      {skills.map((skill, idx) => (
+        <Box
+          ref={box1ref}
+          size={calcSize}
+          /* move={move} */
+          key={idx}
+          keyindex={idx}
+          text={skill}
+        ></Box>
+      ))}
+
       {/* <Box */}
+      {/*   ref={box1ref} */}
       {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="css" */}
-      {/*   left={470} */}
-      {/*   size="small" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="react" */}
-      {/*   left={570} */}
-      {/*   size="big" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="javascript" */}
-      {/*   left={770} */}
-      {/*   size="big" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="linux" */}
-      {/*   left={950} */}
-      {/*   size="small" */}
-      {/* /> */}
-      {/* <Box */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="three js" */}
-      {/*   left={1050} */}
-      {/*   size="small" */}
+      {/*   text="github" */}
+      {/*   left={100} */}
       {/* /> */}
       <Line padding={false} orientation="horizontal" />
       <SkillText />
