@@ -1,8 +1,11 @@
 "use client";
 
 import { forwardRef, useEffect, useState } from "react";
+import usePos from "../customHooks/usePos";
 
 const Box = forwardRef(({ keyindex, text, size }, ref) => {
+  const [position] = usePos();
+
   const [therandom, setTherandom] = useState("yeah1");
   const [thetext, setThetext] = useState("yeah2");
   const [move, setMove] = useState("");
@@ -38,7 +41,9 @@ const Box = forwardRef(({ keyindex, text, size }, ref) => {
   return (
     <div
       ref={ref}
-      style={{ left: `${keyindex * 200}px` }}
+      style={{
+        left: `${keyindex * 200 + position * 200}px`,
+      }}
       className={`${therandom === 2 ? "box-small" : "box-big"} | ${
         move === "move-1-down"
           ? "move-1-step-down"
