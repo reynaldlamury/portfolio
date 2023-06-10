@@ -1,4 +1,4 @@
-import "../styles/Navbar/navbar.scss";
+import "../styles/navbar/navbar.scss";
 import Image from "next/image";
 import download from "../assets/download.svg";
 import Line from "./Line";

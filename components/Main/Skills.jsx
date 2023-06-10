@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 /* import { useEffect } from "react"; */
 import "../../styles/Main/Skills.scss";
 /* import Image from "next/image"; */
