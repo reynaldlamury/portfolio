@@ -1,33 +1,41 @@
 .skills {
-  .title-container {
-    height: 126px;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    // padding-block: 1.5em;
-    outline: 1px solid red;
-    z-index: -1;
+  &__container {
+    padding: 2em;
+    margin-block: 10em;
+    outline: 1px solid yellow;
     overflow-x: hidden;
-  }
+    position: relative;
 
-  .box-big {
-    width: 164px;
-    height: calc(126px * 2);
-    position: absolute;
-    left: 100px;
-    background-color: slateblue;
-    color: white;
-    z-index: 1;
-  }
+    .title-container {
+      height: 126px;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      // padding-block: 1.5em;
+      outline: 1px solid red;
+      z-index: -1;
+      overflow-x: hidden;
+    }
 
-  .box-small {
-    width: 87px;
-    height: 126px;
-    position: absolute;
-    left: 100px;
-    background-color: slateblue;
-    color: white;
-    z-index: 1;
+    .box-big {
+      width: 164px;
+      height: calc(126px * 2);
+      position: absolute;
+      left: 100px;
+      background-color: slateblue;
+      color: white;
+      z-index: 1;
+    }
+
+    .box-small {
+      width: 87px;
+      height: 126px;
+      position: absolute;
+      left: 100px;
+      background-color: slateblue;
+      color: white;
+      z-index: 1;
+    }
   }
 }
 

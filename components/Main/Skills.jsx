@@ -26,35 +26,31 @@ const Skills = () => {
 
   return (
     <section className="skills">
-      <Line padding={false} orientation="horizontal" />
-      <SkillText />
+      <div className="skills__container">
+        <Line padding={false} orientation="horizontal" />
+        <SkillText />
 
-      {skills.map((skill, idx) => (
-        <Box
-          ref={box1ref}
-          size={calcSize}
-          /* move={move} */
-          key={idx}
-          keyindex={idx}
-          text={skill}
-        ></Box>
-      ))}
+        {skills.map((skill, idx) => (
+          <Box
+            ref={box1ref}
+            size={calcSize}
+            /* move={move} */
+            key={idx}
+            keyindex={idx}
+            text={skill}
+          ></Box>
+        ))}
 
-      {/* <Box */}
-      {/*   ref={box1ref} */}
-      {/*   random={Math.floor(Math.random() * 2) + 1} */}
-      {/*   text="github" */}
-      {/*   left={100} */}
-      {/* /> */}
-      <Line padding={false} orientation="horizontal" />
-      <SkillText />
-      <Line padding={false} orientation="horizontal" />
-      <SkillText />
-      <Line padding={false} orientation="horizontal" />
-      <SkillText />
-      <Line padding={false} orientation="horizontal" />
-      <SkillText />
-      <Line padding={false} orientation="horizontal" />
+        <Line padding={false} orientation="horizontal" />
+        <SkillText />
+        <Line padding={false} orientation="horizontal" />
+        <SkillText />
+        <Line padding={false} orientation="horizontal" />
+        <SkillText />
+        <Line padding={false} orientation="horizontal" />
+        <SkillText />
+        <Line padding={false} orientation="horizontal" />
+      </div>
     </section>
   );
 };
