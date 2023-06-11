@@ -9,12 +9,19 @@ const usePos = () => {
   const posRef = useRef();
 
   useEffect(() => {
-    const getSpeed = (e) => {
-      setSpeed((prevSpeed) => (prevSpeed += e.deltaY * 0.0002));
+    let previousScrollTop = window.pageYOffset;
+
+    const getSpeed = () => {
+      let currentScrollTop = window.pageYOffset;
+      let delta = currentScrollTop - previousScrollTop;
+      setSpeed((prevSpeed) => (prevSpeed += delta * 0.0002));
+
+      // Update the previous scroll position
+      previousScrollTop = currentScrollTop;
     };
 
-    window.addEventListener("wheel", getSpeed);
-    return () => window.removeEventListener("wheel", getSpeed);
+    window.addEventListener("scroll", getSpeed);
+    return () => window.removeEventListener("scroll", getSpeed);
   }, []);
 
   const move = useCallback(() => {
