@@ -8,9 +8,9 @@ import github_black from "../assets/social-icons/github_black.svg";
 import instagram_black from "../assets/social-icons/instagram_black.svg";
 import twitter_black from "../assets/social-icons/twitter_black.svg";
 // ----------------------------------------------------------------------------- //
-import project_1 from "../assets/images/projects/bmw.jpg";
-import project_2 from "../assets/images/projects/bugatti.jpg";
-import project_3 from "../assets/images/projects/lamborghini.jpg";
+import project_1 from "../assets/projects/project3.JPG";
+import project_2 from "../assets/projects/project2.JPG";
+import project_3 from "../assets/projects/project1.JPG";
 import project_4 from "../assets/images/projects/mclaren.jpg";
 import project_5 from "../assets/images/projects/ferrari.jpg";
 // ----------------------------------------------------------------------------- //
@@ -61,25 +61,25 @@ export const socials_black = [
 
 export const projects = [
   {
-    name: "project-1",
-    link: "#",
-    tech: ["html", "css", "js"],
+    name: "E-commerce Website",
+    link: "",
+    tech: ["react", "styled-components", "node JS", "express", "mongoDB"],
     img: project_1,
     width: 528,
     height: 352,
   },
   {
-    name: "project-2",
-    link: "#",
-    tech: ["next", "css", "js"],
+    name: "Manage",
+    link: "",
+    tech: ["react", "sass", "js", "vite"],
     img: project_2,
     width: 494,
     height: 333,
   },
   {
-    name: "project-3",
-    link: "#",
-    tech: ["react", "sass", "js"],
+    name: "Portfolio Website",
+    link: "",
+    tech: ["next JS", "react", "sass"],
     img: project_3,
     width: 497,
     height: 330,
