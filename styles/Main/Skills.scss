@@ -9,12 +9,18 @@
     .title-container {
       height: 126px;
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
       justify-content: space-between;
       // padding-block: 1.5em;
       outline: 1px solid red;
       z-index: -1;
       overflow-x: hidden;
+
+      .title {
+        display: flex;
+        gap: 0.3em;
+        font-size: 2rem;
+      }
     }
 
     .box-big {

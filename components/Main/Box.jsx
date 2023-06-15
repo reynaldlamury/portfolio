@@ -1,10 +1,12 @@
 "use client";
 
-import { forwardRef, useEffect, useState } from "react";
-import usePos from "../customHooks/usePos";
+import { forwardRef, useDebugValue, useEffect, useState } from "react";
+/* import usePos from "../customHooks/usePos"; */
+import useLinearPos from "../customHooks/useLinearPos";
+import useDelta from "../customHooks/useDelta";
 
 const Box = forwardRef(({ keyindex, text, size }, ref) => {
-  const [position] = usePos();
+  const [position] = useLinearPos();
 
   const [therandom, setTherandom] = useState("yeah1");
   const [thetext, setThetext] = useState("yeah2");

@@ -1,15 +1,9 @@
 "use client";
 
-import { useRef } from "react";
-/* import { useEffect } from "react"; */
 import "../../styles/Main/Skills.scss";
+import { useRef } from "react";
+import localFont from "next/font/local";
 /* import Image from "next/image"; */
-/* import html from "../../assets/skill-icons/html.svg"; */
-/* import css from "../../assets/skill-icons/css.svg"; */
-/* import git from "../../assets/skill-icons/git.svg"; */
-/* import github from "../../assets/skill-icons/github.svg"; */
-/* import react from "../../assets/skill-icons/react.svg"; */
-/* import js from "../../assets/skill-icons/javascript.svg"; */
 import Line from "../Line";
 import Box from "./Box";
 import { skills } from "@/data/data";
@@ -55,14 +49,16 @@ const Skills = () => {
   );
 };
 
+const billian = localFont({ src: "../../assets/fonts/Billian.otf" });
+
 const SkillText = () => {
   return (
-    <div className="title-container | center-xy">
+    <div className={`${billian.className} title-container | center-xy`}>
       {Array(20)
         .fill(20)
         .map((_, idx) => (
           <p className="title" key={idx}>
-            Skills
+            MY<span>SKILLS</span>
           </p>
         ))}
     </div>
