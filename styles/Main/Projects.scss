@@ -73,16 +73,19 @@
       }
 
       & > .project_container:nth-child(1) {
+        outline: 1px solid yellow;
         transform: translateX(-60px);
+        margin-left: 5em;
 
         @include medium-min {
           transform: none;
+          margin-left: 0;
         }
 
         .project-picture {
           // width: 528px;
           // height: 352px;
-          width: clamp(100px, 39vw, 528px);
+          width: clamp(100px, 41vw, 528px);
           height: clamp(100px, 25vw, 352px);
 
           @include medium-min {
@@ -106,8 +109,8 @@
         .project-picture {
           // width: 494px;
           // height: 333px;
-          width: clamp(100px, 39vw, 494px);
-          height: clamp(100px, 25vw, 333px);
+          width: clamp(100px, 35vw, 494px);
+          height: clamp(100px, 25vw, 326px);
           @include medium-min {
             width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
@@ -145,17 +148,19 @@
       }
 
       & > .project_container:nth-child(4) {
-        transform: translate(-123px, 180px);
+        transform: translate(-127px, 180px);
+        margin-left: 12em;
 
         @include medium-min {
           transform: none;
+          margin-left: 0;
         }
 
         .project-picture {
           // width: 420;
           // height: 276;
           width: clamp(100px, 33vw, 420px);
-          height: clamp(100px, 20vw, 276px);
+          height: clamp(100px, 18vw, 276px);
           @include medium-min {
             width: clamp(100px, 47vw, 628px);
             height: clamp(100px, 25vw, 352px);
