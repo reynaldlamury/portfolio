@@ -8,10 +8,10 @@ import github_black from "../assets/social-icons/github_black.svg";
 import instagram_black from "../assets/social-icons/instagram_black.svg";
 import twitter_black from "../assets/social-icons/twitter_black.svg";
 // ----------------------------------------------------------------------------- //
-import project_1 from "../assets/projects/project3.JPG";
-import project_2 from "../assets/projects/project2.JPG";
-import project_3 from "../assets/projects/project1.JPG";
-import project_4 from "../assets/images/projects/mclaren.jpg";
+import project_1 from "../assets/images/projects/project1.jpg";
+import project_2 from "../assets/images/projects/project2.jpg";
+import project_3 from "../assets/images/projects/project3.jpg";
+import project_4 from "../assets/images/projects/bugatti.jpg";
 import project_5 from "../assets/images/projects/ferrari.jpg";
 // ----------------------------------------------------------------------------- //
 
